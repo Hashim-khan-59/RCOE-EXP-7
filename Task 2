@@ -2,14 +2,12 @@
 int main()
 {
     int arr1[50][50], brr1[50][50], crr1[50][50], i, j, n;
-    
-    // Prompt user for input
+
     printf("\n Addition of two Matrices :\n");
     printf("---------------------------\n");
     printf("\nInput the size of the square matrix : ");
     scanf("%d", &n);
-    
-    // Input elements for the first matrix
+
     printf("\nInput elements in the first matrix :\n");
     for(i=0; i<n; i++)
     {
@@ -20,8 +18,7 @@ int main()
             scanf("%d", &arr1[i][j]);
         }
     }
-    
-    // Input elements for second matrix
+
     printf("\nInput elements in the second matrix :\n");
     for(i=0; i<n; i++)
     {
@@ -32,8 +29,7 @@ int main()
             scanf("%d", &brr1[i][j]);
         }
     }
-    
-    // Display the first matrix
+
     printf("\n The first matrix is :\n");
     for(i=0; i<n; i++)
     {
@@ -43,8 +39,7 @@ int main()
             printf("%d\t", arr1[i][j]);
         }
     }
-    
-    // Display the second matrix
+
     printf("\n The Second matrix is :\n");
     for(i=0; i<n; i++)
     {
@@ -54,8 +49,7 @@ int main()
             printf("%d\t", brr1[i][j]);
         }
     }
-    
-    // Calculate the sum of two matrix
+
     for(i=0; i<n; i++)
     {
         printf("\n");
@@ -64,8 +58,7 @@ int main()
             crr1[i][j] = arr1[i][j] + brr1[i][j];
         }
     }
-    
-    // Display the sum of two matrix (This part is missing in the image but implied)
+
     printf("\n The Sum of the matrices is :\n");
     for(i=0; i<n; i++)
     {
@@ -75,6 +68,5 @@ int main()
             printf("%d\t", crr1[i][j]);
         }
     }
-    
     return 0;
 }
