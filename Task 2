@@ -58,7 +58,6 @@ int main()
             crr1[i][j] = arr1[i][j] + brr1[i][j];
         }
     }
-
     printf("\n The Sum of the matrices is :\n");
     for(i=0; i<n; i++)
     {
